@@ -12,6 +12,10 @@
 		885073D51EC006E700E4DA52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885073D31EC006E700E4DA52 /* Main.storyboard */; };
 		885073D71EC006E700E4DA52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 885073D61EC006E700E4DA52 /* Assets.xcassets */; };
 		885073DA1EC006E700E4DA52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885073D81EC006E700E4DA52 /* LaunchScreen.storyboard */; };
+		888D2B8E1EC00ECB00DE491B /* Candy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888D2B8D1EC00ECB00DE491B /* Candy.swift */; };
+		888D2B901EC00ED400DE491B /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888D2B8F1EC00ED400DE491B /* Data.swift */; };
+		888D2B921EC014A900DE491B /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888D2B911EC014A900DE491B /* CollectionViewController.swift */; };
+		88FCD7471EC1BB2400FB1DDE /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FCD7461EC1BB2400FB1DDE /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		885073D61EC006E700E4DA52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		885073D91EC006E700E4DA52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		885073DB1EC006E700E4DA52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		888D2B8D1EC00ECB00DE491B /* Candy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Candy.swift; path = ../../UISearchController/UISearchController/Candy.swift; sourceTree = "<group>"; };
+		888D2B8F1EC00ED400DE491B /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Data.swift; path = ../../UISearchController/UISearchController/Data.swift; sourceTree = "<group>"; };
+		888D2B911EC014A900DE491B /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		88FCD7461EC1BB2400FB1DDE /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +64,14 @@
 			children = (
 				885073CF1EC006E700E4DA52 /* AppDelegate.swift */,
 				885073D11EC006E700E4DA52 /* ViewController.swift */,
+				888D2B8D1EC00ECB00DE491B /* Candy.swift */,
+				888D2B8F1EC00ED400DE491B /* Data.swift */,
 				885073D31EC006E700E4DA52 /* Main.storyboard */,
 				885073D61EC006E700E4DA52 /* Assets.xcassets */,
 				885073D81EC006E700E4DA52 /* LaunchScreen.storyboard */,
 				885073DB1EC006E700E4DA52 /* Info.plist */,
+				888D2B911EC014A900DE491B /* CollectionViewController.swift */,
+				88FCD7461EC1BB2400FB1DDE /* CollectionViewCell.swift */,
 			);
 			path = UICollectionView;
 			sourceTree = "<group>";
@@ -137,7 +149,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				885073D21EC006E700E4DA52 /* ViewController.swift in Sources */,
+				888D2B8E1EC00ECB00DE491B /* Candy.swift in Sources */,
+				88FCD7471EC1BB2400FB1DDE /* CollectionViewCell.swift in Sources */,
 				885073D01EC006E700E4DA52 /* AppDelegate.swift in Sources */,
+				888D2B901EC00ED400DE491B /* Data.swift in Sources */,
+				888D2B921EC014A900DE491B /* CollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +317,7 @@
 				885073E01EC006E700E4DA52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
