@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "565EBBEC45E4DD6C9D5D33EBE1FE257A5678F8AD",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "F3281EE3CDF8F6959353E94C7ED2DB331F4D7F14" : 9223372036854775807,
+    "565EBBEC45E4DD6C9D5D33EBE1FE257A5678F8AD" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "EF149450-8224-403B-BAC6-940FF3293B5A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "F3281EE3CDF8F6959353E94C7ED2DB331F4D7F14" : "",
+    "565EBBEC45E4DD6C9D5D33EBE1FE257A5678F8AD" : "UICollectionView\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "UICollectionView",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "UICollectionView.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/iosgroup10fpt\/UICollectionView.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "565EBBEC45E4DD6C9D5D33EBE1FE257A5678F8AD"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/iosgroup10fpt\/Animation.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F3281EE3CDF8F6959353E94C7ED2DB331F4D7F14"
+    }
+  ]
+}

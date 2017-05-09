@@ -12,10 +12,11 @@
 		885073D51EC006E700E4DA52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885073D31EC006E700E4DA52 /* Main.storyboard */; };
 		885073D71EC006E700E4DA52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 885073D61EC006E700E4DA52 /* Assets.xcassets */; };
 		885073DA1EC006E700E4DA52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885073D81EC006E700E4DA52 /* LaunchScreen.storyboard */; };
-		888D2B8E1EC00ECB00DE491B /* Candy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888D2B8D1EC00ECB00DE491B /* Candy.swift */; };
-		888D2B901EC00ED400DE491B /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888D2B8F1EC00ED400DE491B /* Data.swift */; };
 		888D2B921EC014A900DE491B /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888D2B911EC014A900DE491B /* CollectionViewController.swift */; };
-		88FCD7471EC1BB2400FB1DDE /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FCD7461EC1BB2400FB1DDE /* CollectionViewCell.swift */; };
+		A71E8E771EC1FA7000A581F1 /* Candy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71E8E761EC1FA7000A581F1 /* Candy.swift */; };
+		A71E8E791EC1FA7F00A581F1 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71E8E781EC1FA7F00A581F1 /* Data.swift */; };
+		A71E8E7B1EC2042600A581F1 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71E8E7A1EC2042600A581F1 /* CollectionViewCell.swift */; };
+		A748101F1EC23C2000992179 /* CollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A748101E1EC23C2000992179 /* CollectionReusableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,10 +27,11 @@
 		885073D61EC006E700E4DA52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		885073D91EC006E700E4DA52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		885073DB1EC006E700E4DA52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		888D2B8D1EC00ECB00DE491B /* Candy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Candy.swift; path = ../../UISearchController/UISearchController/Candy.swift; sourceTree = "<group>"; };
-		888D2B8F1EC00ED400DE491B /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Data.swift; path = ../../UISearchController/UISearchController/Data.swift; sourceTree = "<group>"; };
 		888D2B911EC014A900DE491B /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
-		88FCD7461EC1BB2400FB1DDE /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		A71E8E761EC1FA7000A581F1 /* Candy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Candy.swift; sourceTree = "<group>"; };
+		A71E8E781EC1FA7F00A581F1 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		A71E8E7A1EC2042600A581F1 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		A748101E1EC23C2000992179 /* CollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionReusableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,14 +66,15 @@
 			children = (
 				885073CF1EC006E700E4DA52 /* AppDelegate.swift */,
 				885073D11EC006E700E4DA52 /* ViewController.swift */,
-				888D2B8D1EC00ECB00DE491B /* Candy.swift */,
-				888D2B8F1EC00ED400DE491B /* Data.swift */,
 				885073D31EC006E700E4DA52 /* Main.storyboard */,
+				A71E8E761EC1FA7000A581F1 /* Candy.swift */,
+				A71E8E781EC1FA7F00A581F1 /* Data.swift */,
 				885073D61EC006E700E4DA52 /* Assets.xcassets */,
 				885073D81EC006E700E4DA52 /* LaunchScreen.storyboard */,
 				885073DB1EC006E700E4DA52 /* Info.plist */,
 				888D2B911EC014A900DE491B /* CollectionViewController.swift */,
-				88FCD7461EC1BB2400FB1DDE /* CollectionViewCell.swift */,
+				A71E8E7A1EC2042600A581F1 /* CollectionViewCell.swift */,
+				A748101E1EC23C2000992179 /* CollectionReusableView.swift */,
 			);
 			path = UICollectionView;
 			sourceTree = "<group>";
@@ -148,11 +151,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A748101F1EC23C2000992179 /* CollectionReusableView.swift in Sources */,
 				885073D21EC006E700E4DA52 /* ViewController.swift in Sources */,
-				888D2B8E1EC00ECB00DE491B /* Candy.swift in Sources */,
-				88FCD7471EC1BB2400FB1DDE /* CollectionViewCell.swift in Sources */,
+				A71E8E791EC1FA7F00A581F1 /* Data.swift in Sources */,
+				A71E8E7B1EC2042600A581F1 /* CollectionViewCell.swift in Sources */,
+				A71E8E771EC1FA7000A581F1 /* Candy.swift in Sources */,
 				885073D01EC006E700E4DA52 /* AppDelegate.swift in Sources */,
-				888D2B901EC00ED400DE491B /* Data.swift in Sources */,
 				888D2B921EC014A900DE491B /* CollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,7 +283,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = UICollectionView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = Quiz.UICollectionView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -291,7 +297,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = UICollectionView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = Quiz.UICollectionView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;

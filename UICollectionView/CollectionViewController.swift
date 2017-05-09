@@ -14,7 +14,7 @@ class CollectionViewController: UICollectionViewController {
     
     //@IBOutlet weak var images: UIImageView!
     var listStudents : [Data] = {
-        var listStudents = Data.listStudents()
+        var listStudents = Data.arrayStudents()
         return listStudents
     }()
     override func viewDidLoad() {
@@ -54,24 +54,42 @@ class CollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return listStudents[section].strucStudents.count
+        return listStudents[section].listStudents.count
     }
+    
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CollectionViewCell
-        var image :  UIImage
-        if let img = UIImage(named  : listStudents[indexPath.section].strucStudents[indexPath.row].image){
-            image = img
+        let cell: CollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CollectionViewCell
+        let img = UIImage(named  : listStudents[indexPath.section].listStudents[indexPath.row].image)
+        if (img != nil)
+        {
+            cell.imageStudents.image = img
         }
         else
         {
-            image = UIImage(named: "Lollipop.png" )!
+            cell.imageStudents.image = UIImage(named: "Lollipop.png" )!
         }
-        cell.imageStudents?.image = image
+
+        //return cell
+        /*let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
+        
+        if let img = UIImage(named  : listStudents[indexPath.section].listStudents[indexPath.row].image){
+            cell.
+        }
+        else
+        {
+            cell.imageStudents?.image = UIImage(named: "Lollipop.png" )!
+        }
+        //cell.imageStudents?.image = image1
     
         // Configure the cell
-    
+    */
         return cell
+    }
+    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "headerCell", for: indexPath) as! CollectionReusableView
+        header.label.text = listStudents[indexPath.section].listStudents[indexPath.row].name
+        return header
     }
 
     // MARK: UICollectionViewDelegate
