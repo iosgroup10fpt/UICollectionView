@@ -14,13 +14,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var descriptions: UILabel!
     var detiltle = String()
     var Detail = String()
-    var Image1 = UIImage()
+    var Image1 = String()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         title1.text = detiltle
-        image.image = Image1
-
+        image.image = UIImage(named : Image1)
+        descriptions.text = Detail
+        
         // Do any additional setup after loading the view.
     }
 

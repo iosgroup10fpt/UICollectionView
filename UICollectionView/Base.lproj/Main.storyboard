@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dkf-Jh-6Td">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dkf-Jh-6Td">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -78,11 +78,37 @@
                             <outlet property="delegate" destination="ay5-eO-KBQ" id="QDH-sN-w5n"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="N01-MQ-rfd"/>
+                    <navigationItem key="navigationItem" id="N01-MQ-rfd">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="8vu-Mz-2ZD">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="k8m-EV-Mfm">
+                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I1n-w5-sD2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1180" y="288.30584707646182"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vX6-C4-ohN">
+            <objects>
+                <viewController restorationIdentifier="AddStudents" storyboardIdentifier="AddStudents" id="vw2-aC-ig6" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XMC-P3-rwT"/>
+                        <viewControllerLayoutGuide type="bottom" id="mrA-vQ-JQv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bh4-ma-X7S">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cGd-ya-DzA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1858" y="-31"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="06H-Qr-b7n">
@@ -153,7 +179,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fBh-3T-mNA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1920.8" y="288.30584707646182"/>
+            <point key="canvasLocation" x="1919" y="713"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="am9-eS-1Bf">

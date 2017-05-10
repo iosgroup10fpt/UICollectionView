@@ -19,7 +19,7 @@ class CollectionViewController: UICollectionViewController {
     }()
     var temp = ""
     var temp1 = ""
-    var temp2 : UIImage
+    var temp2 = ""
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -28,10 +28,13 @@ class CollectionViewController: UICollectionViewController {
 
         // Register cell classes
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
+//        self.navigationItem.rightBarButtonItem = self.editButtonItem
+//        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Delete", style : .plain , target : self , action: Selector(("deleteSelectedItemsAction:")))
         // Do any additional setup after loading the view.
     }
-
+    func deleteSelectedItemsAction(sender: UIBarButtonItem){
+        print("delete")
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -97,25 +100,29 @@ class CollectionViewController: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         temp = listStudents[indexPath.section].listStudents[indexPath.row].name
-        let img = UIImage(named  : listStudents[indexPath.section].listStudents[indexPath.row].image)
-        if (img != nil)
-        {
-            temp2 = img!
-        }
-        else
-        {
-            temp2 = UIImage(named: "Lollipop.png" )!
-        }
+        temp2 = listStudents[indexPath.section].listStudents[indexPath.row].image
+        temp1 = listStudents[indexPath.section].listStudents[indexPath.row].university
+//        if (img != nil)
+//        {
+           // temp2 = img
+//        }
+//        else
+//        {
+//            temp2 = "Lollipop.png"
+//        }
+        
         guard let controller = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as? ViewController else {
             return
         }
         controller.detiltle = temp
         controller.Image1 = temp2
+        controller.Detail = temp1
         self.navigationController?.pushViewController(controller, animated: true)
 
       //  temp2 = listStudents[indexPath.section].listStudents[indexPath.row].image
         
     }
+    
     // MARK: UICollectionViewDelegate
 
     /*

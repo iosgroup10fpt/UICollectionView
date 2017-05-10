@@ -22,7 +22,7 @@ class Data {
     
     class func Students1() -> Data {
         var listCanndy = [Students]()
-        listCanndy.append(Students(name: "Thanh Khoa", university :"Chocolate Bar", imageName: "ChocolateBar.png" ))
+        listCanndy.append(Students(name: "Thanh Khoa", university :"HCM UTE", imageName: "ChocolateBar.png" ))
         return Data(listStudents : listCanndy)
     }
     
