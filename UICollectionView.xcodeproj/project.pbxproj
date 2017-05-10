@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		885073D01EC006E700E4DA52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885073CF1EC006E700E4DA52 /* AppDelegate.swift */; };
-		885073D21EC006E700E4DA52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885073D11EC006E700E4DA52 /* ViewController.swift */; };
 		885073D51EC006E700E4DA52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885073D31EC006E700E4DA52 /* Main.storyboard */; };
 		885073D71EC006E700E4DA52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 885073D61EC006E700E4DA52 /* Assets.xcassets */; };
 		885073DA1EC006E700E4DA52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885073D81EC006E700E4DA52 /* LaunchScreen.storyboard */; };
@@ -17,12 +16,12 @@
 		A71E8E791EC1FA7F00A581F1 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71E8E781EC1FA7F00A581F1 /* Data.swift */; };
 		A71E8E7B1EC2042600A581F1 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71E8E7A1EC2042600A581F1 /* CollectionViewCell.swift */; };
 		A748101F1EC23C2000992179 /* CollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A748101E1EC23C2000992179 /* CollectionReusableView.swift */; };
+		A74810211EC28C0000992179 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74810201EC28C0000992179 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		885073CC1EC006E700E4DA52 /* UICollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UICollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		885073CF1EC006E700E4DA52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		885073D11EC006E700E4DA52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		885073D41EC006E700E4DA52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		885073D61EC006E700E4DA52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		885073D91EC006E700E4DA52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -32,6 +31,7 @@
 		A71E8E781EC1FA7F00A581F1 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		A71E8E7A1EC2042600A581F1 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		A748101E1EC23C2000992179 /* CollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionReusableView.swift; sourceTree = "<group>"; };
+		A74810201EC28C0000992179 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +65,6 @@
 			isa = PBXGroup;
 			children = (
 				885073CF1EC006E700E4DA52 /* AppDelegate.swift */,
-				885073D11EC006E700E4DA52 /* ViewController.swift */,
 				885073D31EC006E700E4DA52 /* Main.storyboard */,
 				A71E8E761EC1FA7000A581F1 /* Candy.swift */,
 				A71E8E781EC1FA7F00A581F1 /* Data.swift */,
@@ -75,6 +74,7 @@
 				888D2B911EC014A900DE491B /* CollectionViewController.swift */,
 				A71E8E7A1EC2042600A581F1 /* CollectionViewCell.swift */,
 				A748101E1EC23C2000992179 /* CollectionReusableView.swift */,
+				A74810201EC28C0000992179 /* ViewController.swift */,
 			);
 			path = UICollectionView;
 			sourceTree = "<group>";
@@ -152,10 +152,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A748101F1EC23C2000992179 /* CollectionReusableView.swift in Sources */,
-				885073D21EC006E700E4DA52 /* ViewController.swift in Sources */,
 				A71E8E791EC1FA7F00A581F1 /* Data.swift in Sources */,
 				A71E8E7B1EC2042600A581F1 /* CollectionViewCell.swift in Sources */,
 				A71E8E771EC1FA7000A581F1 /* Candy.swift in Sources */,
+				A74810211EC28C0000992179 /* ViewController.swift in Sources */,
 				885073D01EC006E700E4DA52 /* AppDelegate.swift in Sources */,
 				888D2B921EC014A900DE491B /* CollectionViewController.swift in Sources */,
 			);

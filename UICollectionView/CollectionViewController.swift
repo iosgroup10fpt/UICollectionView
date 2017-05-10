@@ -17,6 +17,9 @@ class CollectionViewController: UICollectionViewController {
         var listStudents = Data.arrayStudents()
         return listStudents
     }()
+    var temp = ""
+    var temp1 = ""
+    var temp2 : UIImage
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -91,7 +94,28 @@ class CollectionViewController: UICollectionViewController {
         header.label.text = listStudents[indexPath.section].listStudents[indexPath.row].name
         return header
     }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        temp = listStudents[indexPath.section].listStudents[indexPath.row].name
+        let img = UIImage(named  : listStudents[indexPath.section].listStudents[indexPath.row].image)
+        if (img != nil)
+        {
+            temp2 = img!
+        }
+        else
+        {
+            temp2 = UIImage(named: "Lollipop.png" )!
+        }
+        guard let controller = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as? ViewController else {
+            return
+        }
+        controller.detiltle = temp
+        controller.Image1 = temp2
+        self.navigationController?.pushViewController(controller, animated: true)
 
+      //  temp2 = listStudents[indexPath.section].listStudents[indexPath.row].image
+        
+    }
     // MARK: UICollectionViewDelegate
 
     /*
